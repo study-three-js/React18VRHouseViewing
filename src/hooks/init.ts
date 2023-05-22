@@ -41,7 +41,9 @@ const initFun = (THREE: typeof import("three")) => {
     // 渲染函数
     render,
     // 场景
-    scene
+    scene,
+    // 相机
+    camera
   }
 }
 

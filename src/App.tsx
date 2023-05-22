@@ -7,8 +7,8 @@ import initFun from './hooks/init'
 import cubeFun from './hooks/cube'
 
 function App() {
-  const { render, renderer, scene } = initFun(THREE)
-  cubeFun(THREE, scene)
+  const { render, renderer, scene, camera } = initFun(THREE)
+  cubeFun(THREE, scene, camera)
 
   // 5. 初始化dom
   const containerRef = useRef<HTMLDivElement>(null); // 通过泛型指定 `containerRef` 是一个 `HTMLDivElement`
